@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hakkımda</title>
+
+  <link rel="stylesheet" href="home.css">
+  <style>
+
+    /* body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f9;
+      } */
+  
+      .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: url('header-background.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+        }
+        .header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .date {
+            text-align: center;
+            color: #888;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+  
+  
+    </style>
+</head>
+
+
+
+
+<body>
+
+  <img class="top-background" src="../prj/autovision/images/black-fiber.jpg" alt="Background Image">
+
+  <h1 class="header">
+    <img class="logo" src="../prj/autovision/images/LOGO.webp" alt="Logo">
+
+    <strong>AutoVision</strong>
+  </h1>
+
+  <div class="left-and-mid-blocks">
+
+    <div class="left-block">
+
+      <img class="left-background" src="../prj/autovision/images/left-background.jpg" alt="Side Background">
+
+      <div class="l2">
+        <a href="index.html" class="home">
+          <strong>-Home</strong>
+        </a>
+      </div>
+
+      <div class="l3">
+        <a href="#" class="automobile" onclick="toggleSubmenu('submenu-automobiles', event)">
+          <strong>-Automobiles</strong>
+        </a>
+      </div>
+
+      <div class="l4">
+        <a href="#" class="suv" onclick="toggleSubmenu('submenu-suvs', event)">
+          <strong>-SUVs</strong>
+        </a>
+      </div>
+
+      <div class="l5">      
+
+        <a href="hakkimda.html" class="home">
+          <strong>-Hakkımda</strong>
+        </a>
+
+      </div>
+
+    </div>
+
+    
+    <div id="submenu-automobiles" class="submenu">
+      <a href="../prj/autovision/Next Page/auto-volkswagen.html">Volkswagen</a>
+      <a href="../prj/autovision/Next Page/auto-ford.html">Ford</a>
+      <a href="../prj/autovision/Next Page/auto-toyota.html">Toyota</a>
+      <a href="../prj/autovision/Next Page/auto-mercedes.html">Mercedes</a>
+    </div>
+    
+
+    <div id="submenu-suvs" class="submenu">
+      <a href="../prj/autovision/Next Page/suv-landrover.html">Landrover</a>
+      <a href="../prj/autovision/Next Page/suv-jeep.html">Jeep</a>
+      <a href="../prj/autovision/Next Page/suv-gmc.html">Gmc</a>
+      <a href="../prj/autovision/Next Page/suv-mitsubishi.html">Mitsubishi</a>
+    </div>
+
+
+    <div class="container">
+      <h1>Hakkımda</h1>
+      <p>Bu internet sitesi Ankara Üniversitesi Bilgisayar Mühendisliği Bölümü'nde 2. sınıf öğrencisi olan Mehmet Barış Koyuncu tarafından Ağ Tabanlı Programlama dersi final projesi olarak tasarlanmıştır.</p>
+      <p class="date">16/01/2025</p>
+  
+      <a href="Comment.php">Yorum Ekleyin</a>
+     
+  </div>
+
+  <script>
+    function toggleSubmenu(id, event) {
+      event.preventDefault(); // Prevent default link behavior
+      const submenus = document.querySelectorAll('.submenu');
+      submenus.forEach(submenu => {
+        if (submenu.id === id) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        } else {
+          submenu.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

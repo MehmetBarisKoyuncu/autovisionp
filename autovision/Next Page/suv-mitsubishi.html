@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AutoVision.com</title>
+  <!-- STYLE KISMI ÖZEL !!!!! -->
+  <link rel="stylesheet" href="next-page-style.css">
+</head>
+
+<body>
+
+  <img class="top-background" src="../images/black-fiber.jpg" alt="Background Image">
+
+  <h1 class="header">
+    <img class="logo" src="../images/LOGO.webp" alt="Logo">
+
+    <strong>AutoVision</strong>
+  </h1>
+
+  <div class="left-and-mid-blocks">
+
+    <div class="left-block">
+
+      <img class="left-background" src="../images/left-background.jpg" alt="Side Background">
+
+      <div class="l2">
+        <a href="../../index.html" class="home">
+          <strong>-Home</strong>
+        </a>
+      </div>
+
+      <div class="l3">
+        <a href="#" class="automobile" onclick="toggleSubmenu('submenu-automobiles', event)">
+          <strong>-Automobiles</strong>
+        </a>
+      </div>
+
+      <div class="l4">
+        <a href="#" class="suv" onclick="toggleSubmenu('submenu-suvs', event)">
+          <strong>-SUVs</strong>
+        </a>
+      </div>
+
+     
+
+    </div>
+
+    
+    <div id="submenu-automobiles" class="submenu">
+      <a href="auto-volkswagen.html">Volkswagen</a>
+      <a href="auto-ford.html">Ford</a>
+      <a href="auto-toyota.html">Toyota</a>
+      <a href="auto-mercedes.html">Mercedes</a>
+    </div>
+    
+
+    <div id="submenu-suvs" class="submenu">
+      <a href="suv-landrover.html">Landrover</a>
+      <a href="suv-jeep.html">Jeep</a>
+      <a href="suv-gmc.html">Gmc</a>
+      <a href="suv-mitsubishi.html">Mitsubishi</a>
+    </div>
+
+  
+
+    <div class="mid">
+
+      <div class="basliklar">
+
+        <div class="marka">
+          <p>Marka:</p>
+        </div>
+
+        <div class="model">
+          <p>Model:</p>
+        </div>
+
+        <div class="motor">
+          <p>Motor:</p>
+        </div>
+
+        <div class="boyutlar">
+          <p>Boyutlar:</p>
+        </div>
+
+        <div class="bagaj-hacmi">
+          <p>Bagaj Hacmi:</p>
+        </div>
+
+        <div class="fiyat">
+          <p>Fiyat:</p>
+        </div>
+
+      </div>
+
+      <!-- BİLGİLER KISMI ÖZEL !!!!!! -->
+      <div class="bilgiler">
+
+        <div class="marka2">
+          <p>Mitsubishi</p>
+        </div>
+
+        <div class="model2">
+          <p>L 200</p>
+        </div>
+
+        <div class="motor2">
+          <p>2.3 Dizel</p>
+        </div>
+
+        <div class="boyutlar2">
+          <p>5.305m, 1.815m, 1.780m</p>
+        </div>
+
+        <div class="bagaj-hacmi2">
+          <p>1500 lt</p>
+        </div>
+
+        <div class="fiyat2">
+          <p>4.000.000 TL</p>
+        </div>
+
+      </div>
+
+      <!-- RESİMLER KISMI ÖZEL -->
+      <div class="resim-kismi">
+
+        <img class="model-resim" src="../images/l2001.jpg" alt="l200">
+
+        <img class="model-resim2" src="../images/l2002.jpg" alt="l2002">
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleSubmenu(id, event) {
+      event.preventDefault(); 
+      const submenus = document.querySelectorAll('.submenu');
+      submenus.forEach(submenu => {
+        if (submenu.id === id) {
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        } else {
+          submenu.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
